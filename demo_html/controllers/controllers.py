@@ -7,7 +7,10 @@ class DemoHtml(http.Controller):
         html_path = os.path.relpath(os.path.join(os.path.dirname(__file__), '../views/demo.html'))
         with open(html_path) as f:
             return f.read()
-#         return "Hello, world"
+
+    @http.route('/demo_html/form', auth='none')
+    def demo_form(self, password):
+        return password
 
 #     @http.route('/demo_html/demo_html/objects/', auth='public')
 #     def list(self, **kw):
