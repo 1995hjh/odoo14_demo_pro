@@ -1,10 +1,12 @@
-# -*- coding: utf-8 -*-
-# from odoo import http
+from odoo import http
+import os
 
-
-# class DemoHtml(http.Controller):
-#     @http.route('/demo_html/demo_html/', auth='public')
-#     def index(self, **kw):
+class DemoHtml(http.Controller):
+    @http.route('/demo_html/raw/', auth='none')
+    def demo_html(self):
+        html_path = os.path.relpath(os.path.join(os.path.dirname(__file__), '../views/demo.html'))
+        with open(html_path) as f:
+            return f.read()
 #         return "Hello, world"
 
 #     @http.route('/demo_html/demo_html/objects/', auth='public')
