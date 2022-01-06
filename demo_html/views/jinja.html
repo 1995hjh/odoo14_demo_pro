@@ -2,23 +2,29 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-		<title>odoo</title>
+		<title>jinja</title>
 	</head>
 	<body>
 		<a href="http://funenc.com">odoo A</a>
 		<h1>title1</h1>
 		<h2>title1</h2>
 
-		<form><!--action="/demo_html/demo_form" method="post"-->
+		<form action="/demo_html/formJinja" method="post">
 			<div>
 				<span>密码: </span>
-				<!--<input type="hidden" name="csrf_token" t-arr-value="request.csrf_token()">-->
+				<input type="hidden" name="csrf_token" value="{{request.csrf_token()}}">
 				<input type="password" name="password">
 			</div>
 			<div>
 				<input type="submit" name="提交">
 			</div>
 		</form>
+		<div>
+			<p>用户信息：</p>
+			<p>id: {{ request.env.user.id }}</p>
+			<p>name: {{ request.env.user.name }}</p>
+			<p>login: {{ request.env.user.login }}</p>
+		</div>
 		<button type="object" class="btn">
 			按钮
 		</button>
@@ -32,5 +38,10 @@
 		<script>
 			console.log('页面上有一个button');
 		</script>
+		{% for i in ars %}
+			<p>
+				p: {{ i }}
+			</p>
+		{% endfor %}
 	</body>
 </html>

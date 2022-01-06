@@ -17,6 +17,11 @@
   拷贝odoo.conf, 修改相应配置
   add configured【打开运行配置，parameters处添加 -c C:\Workspace\odoo_demo_pro\local.conf，script path添加C:\Program Files\Odoo 14.0.20220101\server\odoo-bin】
 
-### 如果修改了数据库名，默认账号名密码  admin  admin
+# 刷新xml文件
+  配置命令后面需要添加 --dev xml,完整如下：
+  -c C:\Workspace\odoo_demo_pro\local.conf --dev xml
 
-### 添加路由，项目需要重启
+# 一些规则
+  1、如果修改了数据库名，默认账号名密码  admin  admin\
+  2、修改controllers.py文件，需要重启项目才能生效\
+  

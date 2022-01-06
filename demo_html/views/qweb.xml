@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+
+        <template id="listing">
+            <div>
+                qweb
+            </div>
+            <t t-if="true">
+                真的
+            </t>
+            <t t-call="demo_html.test"/>
+            <div>
+			<p>用户信息：</p>
+			<p>id: <t t-esc="request.env.user.id"></t></p>
+			<p>name: <t t-esc="request.env.user.name"></t></p>
+			<p>login: <t t-esc="request.env.user.login"></t></p>
+                <t t-foreach="ars" t-as="i">
+                    <t t-esc="i"></t><br/>
+                </t>
+		</div>
+        </template>
+        <template id="test">
+            <div>片段</div>
+        </template>
+        <template id="i_yuan_man_login" inherit_id="web.login_layout">
+            <xpath expr="//t[@t-call='web.frontend_layout']" position="inside">
+                    <style>
+                        .card-body{
+                            width:400px;
+                        }
+                        .bg-100 {
+                            background:blue !important;
+                        }
+                    </style>
+            </xpath>
+        </template>
+    </data>
+</odoo>
