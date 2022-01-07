@@ -1,0 +1,36 @@
+.o_web_client {
+    background: #7C7BAD;
+}
+.o_web_client .o_action_manager {
+    width: 90%;
+    margin-left: 10%;
+    position: absolute;
+    top: 46px;
+}
+.o_controller_with_searchpanel .o_renderer_with_searchpanel {
+    background: #f9f9f9;
+}
+.i_yuan_man_menu {
+    width: 10%;
+    height: calc(100% - 46px);
+    /*background: #7C7BAD;*/
+    position: absolute;
+    left: 0;
+    top: 46px;
+    flex: 0 0 auto;
+}
+.menu_list_view {
+    padding: 0;
+}
+.menu_list {
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    border-bottom: 1px solid #5f5e97;
+    cursor: pointer;
+}
+.menu_list:hover {
+    background-color: #5f5e97;
+}
