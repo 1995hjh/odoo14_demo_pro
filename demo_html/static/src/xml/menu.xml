@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+<t t-extend="web.webclient_bootstrap">
+    <t t-jquery=".o_web_client" t-operation="append">
+        <div style="background: blue;">测试</div>
+    </t>
+</t>
+    <!--
+    <t t-call="web.webclient_bootstrap" t-name="iymmenu">
+        <div style="background: blue;">测试</div>
+    </t>
+    -->
+    <!--
+    <template name="Inherit Template" id="child.template" inherit_id="web.webclient_bootstrap" >
+
+        <xpath expr="//t" position="inside">
+            <div style="background: blue;">测试</div>
+        </xpath>
+    </template>
+    -->
+</templates>

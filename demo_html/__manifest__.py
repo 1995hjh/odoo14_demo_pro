@@ -25,11 +25,15 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/qweb.xml',
+       # 'views/qweb.xml',
         'views/webclient.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
-    ]
+    ],
+    'qweb': [
+        'static/src/xml/menu.xml',
+    ],
+    'bootstrap': True
 }
