@@ -33,7 +33,8 @@
         'demo/demo.xml',
     ],
     'qweb': [
-        'static/src/xml/menu.xml',
+        "static/src/xml/menu.xml",
     ],
-    'bootstrap': True
+    'bootstrap': True,
+    'license': 'LGPL-3'
 }
