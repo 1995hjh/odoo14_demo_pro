@@ -30,19 +30,3 @@
 .menu_list:hover {
     background-color: #5f5e97;
 }
-.dropdown_navbar .btn {
-    height: 46px;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-}
-.o_main_navbar .show .dropdown-toggle {
-    background: transparent;
-}
-.btn:focus {
-    box-shadow: none;
-}
-.dropdown-item .bi {
-    margin-right: 5px;
-    vertical-align: text-bottom;
-}
